@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | Product Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Product Dashboard</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="stats.html">Stats</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="section">
+    <div class="container">
+      <h1 class="section-title">Products</h1>
+
+      <div class="grid-2">
+        <section class="card form-card">
+          <h3>Add new product</h3>
+          <form id="product-form">
+            <div>
+              <label for="name">Product name</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Keyboard" required />
+            </div>
+
+            <div>
+              <label for="price">Price</label>
+              <input type="number" id="price" name="price" placeholder="e.g. 199" required />
+            </div>
+
+            <div>
+              <label for="quantity">Quantity</label>
+              <input type="number" id="quantity" name="quantity" placeholder="e.g. 10" required />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Add product</button>
+          </form>
+
+          <p id="form-message" class="message"></p>
+        </section>
+
+        <section class="card">
+          <h3>Product list</h3>
+          <div id="product-list" class="product-list">
+            <p>Loading products...</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      Product Dashboard Demo
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+</body>
+</html>

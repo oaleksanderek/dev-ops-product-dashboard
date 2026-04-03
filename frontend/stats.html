@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stats | Product Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Product Dashboard</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="stats.html" class="active">Stats</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="section-title">Statistics</h1>
+
+      <div class="grid-2">
+        <div class="card stat-box">
+          <div id="total-products" class="stat-number">--</div>
+          <p>Total products</p>
+        </div>
+
+        <div class="card stat-box">
+          <div id="backend-instance" class="stat-number">--</div>
+          <p>Backend instance</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      Product Dashboard Demo
+    </div>
+  </footer>
+
+  <script src="js/stats.js"></script>
+</body>
+</html>
